@@ -1,0 +1,1 @@
+ALTER TABLE "products" ADD COLUMN "category" text DEFAULT 'gorras' NOT NULL;

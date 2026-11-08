@@ -1,0 +1,126 @@
+{
+  "id": "104faebe-ed01-4e2b-ba69-76834e238899",
+  "prevId": "7015d633-f60d-4598-a5bf-3b0c93b6e834",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.products": {
+      "name": "products",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "category": {
+          "name": "category",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'gorras'"
+        },
+        "price": {
+          "name": "price",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "stock": {
+          "name": "stock",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "image_url": {
+          "name": "image_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_pathname": {
+          "name": "image_pathname",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_side_url": {
+          "name": "image_side_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_side_pathname": {
+          "name": "image_side_pathname",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_back_url": {
+          "name": "image_back_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_back_pathname": {
+          "name": "image_back_pathname",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_detail_url": {
+          "name": "image_detail_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_detail_pathname": {
+          "name": "image_detail_pathname",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
